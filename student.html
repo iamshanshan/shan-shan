@@ -1,0 +1,20 @@
+<html>
+<head>
+     <script type="http://d3js.org/d3.v4.js"></script>
+</head>
+
+<body>
+      <script type="text/javascript">
+      var url = "https://iamshanshan.github.io/shan-shan/student.csv"
+      d3.csv(url, function(data){console.log(data)})
+    var w = 500
+	var h = 300; //定義高
+	var m = 20; //定義邊界
+	var n = 50; //定義 Axis 邊界
+	var Ymax = d3.max(data, function(d){ return d.BC; });
+	var Ymin = d3.min(data, function(d){ return d.PHD; });
+	var Xmax = d3.max(data, function(d){ return d.Year; });
+	var Xmin = d3.min(data, function(d){ return d.Year; });
+</script>
+</body>
+</html>
